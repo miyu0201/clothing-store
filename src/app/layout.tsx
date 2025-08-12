@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Montserrat } from "next/font/google";
 import "./globals.css";
 
+
 import Header from "../components/Header";
+import NavBar from "../components/NavBar";
 import MainContainer from "../components/MainContainer";
 import Footer from "../components/Footer";
 
@@ -39,7 +41,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} antialiased`}
       >
         <Header />
-        <MainContainer>
+  <NavBar />
+  <MainContainer>
           {children}
         </MainContainer>
         <Footer />

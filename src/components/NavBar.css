@@ -1,0 +1,115 @@
+/* NavBar Styles */
+
+.nav-bar {
+  background: #111;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  position: sticky;
+  top: 0;
+  z-index: 101;
+}
+
+.nav-bar-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin: 0;
+  padding: 0.7rem 0;
+  list-style: none;
+}
+
+.nav-bar-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.08rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.5rem;
+  transition: background 0.2s, color 0.2s;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-bar-link:hover {
+  background: #222;
+  color: #ffb300;
+}
+
+.nav-bar-item {
+  position: relative;
+}
+
+.nav-bar-dropdown {
+  position:fixed;
+  left: 0;
+  top: calc(var(--nav-bar-height, 10rem) + var(--header-height, 0px));
+  width: 100vw;
+  background: #222;
+  border-radius: 0 0 0.7rem 0.7rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  z-index: 100;
+  padding: 2.5rem 0 2.5rem 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+
+.nav-bar-dropdown-col {
+  min-width: 160px;
+  max-width: 220px;
+  margin-right: 1.5rem;
+}
+
+.nav-bar-dropdown-col-title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.08rem;
+  margin-bottom: 0.7rem;
+  letter-spacing: 0.04em;
+}
+
+.nav-bar-dropdown-sublinks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-bar-dropdown-link {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 1.2rem 0.5rem 0;
+  font-size: 1rem;
+  transition: background 0.18s, color 0.18s;
+  background: none;
+  border: none;
+  text-align: left;
+  width: 100%;
+}
+
+.nav-bar-dropdown-link:hover {
+  background: #333;
+  color: #ffb300;
+}
+
+.nav-bar-subdropdown {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  min-width: 180px;
+  background: #222;
+  border-radius: 0 0 0.7rem 0.7rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  z-index: 20;
+  padding: 0.5rem 0;
+  margin: 0;
+  list-style: none;
+}
